@@ -1,15 +1,22 @@
+#zuul:
+#  routes:
+#    portfolio: /api/users**
+    
 zuul:
   routes:
-    portfolio: /api/users**
+    portfolio:
+      path: /api/users**
+      url: http://localhost:8765/api/users
+      
 
-portfolio:
-  ribbon:
-    ReadTimeout: 60000
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
+#portfolio:
+#  ribbon:
+#    ReadTimeout: 60000
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 60000
