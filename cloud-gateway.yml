@@ -6,6 +6,9 @@ portfolio:
     ReadTimeout: 60000
 
 ribbon:
+  ReadTimeout: 60000
+
+ribbon:
   eureka:
     enabled: false
 
