@@ -2,13 +2,9 @@ zuul:
   routes:
     portfolio: /api/users**
 
-    portfolio:
+portfolio:
   ribbon:
     ReadTimeout: 60000
-
-ribbon:
-  eureka:
-    enabled: false
 
 hystrix:
   command:
@@ -17,3 +13,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
+
+ribbon:
+  eureka:
+    enabled: false
