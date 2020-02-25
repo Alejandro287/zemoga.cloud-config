@@ -8,12 +8,8 @@ portfolio:
 
 hystrix:
   command:
-    portfolio:
+    default:
       execution:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
-
-ribbon:
-  eureka:
-    enabled: false
