@@ -1,3 +1,6 @@
 zuul:
   routes:
-    ms-user: /api/users/**
+    portfolio: /api/users**
+
+ribbon:
+  ReadTimeout: 60000
