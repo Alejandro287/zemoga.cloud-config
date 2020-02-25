@@ -1,6 +1,9 @@
 zuul:
   routes:
     portfolio: /api/users**
+portfolio:
+  ribbon:
+    ReadTimeout: 60000
 
 ribbon:
   eureka:
