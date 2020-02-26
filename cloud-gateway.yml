@@ -1,7 +1,9 @@
+server:
+  port: 8765
 #zuul:
 #  routes:
 #    portfolio: /api/users**
-    
+
 zuul:
   routes:
     portfolio:
